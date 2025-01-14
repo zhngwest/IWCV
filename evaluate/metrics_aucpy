@@ -1,0 +1,16 @@
+from sklearn.metrics import roc_auc_score
+
+
+def auc_metric(y_true, y_pred):
+    """
+    Calculate the AUC-ROC score.
+
+    Parameters:
+    - y_true: True labels.
+    - y_pred: Predicted probabilities.
+
+    Returns:
+    - auc: AUC-ROC score.
+    ——just show the auc score
+    """
+    return roc_auc_score(y_true, y_pred)
